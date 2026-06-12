@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Eye, Target, Users } from "lucide-react";
+import { Eye, Target, Users, Building2, Briefcase, Award, Lightbulb, Handshake, Globe, Trophy, Calendar, CheckCircle, GraduationCap, User, FileText, TrendingUp, Heart, Shield, Sparkles } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -9,10 +9,10 @@ export default function About() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-16 md:py-24">
+      <section className="bg-gradient-to-r from-[#4a7c59] to-[#3a6347] text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
-          <p className="text-xl text-blue-100">
+          <p className="text-xl text-[#d4e8da]">
             Learn about our institution's mission, vision, and commitment to
             excellence
           </p>
@@ -23,9 +23,11 @@ export default function About() {
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="text-6xl text-center">🏫</div>
+            <div className="flex justify-center">
+              <Building2 size={120} className="text-[#4a7c59]" strokeWidth={1.5} />
+            </div>
             <div>
-              <h2 className="text-4xl font-bold text-primary mb-6">
+              <h2 className="text-4xl font-bold text-[#4a7c59] mb-6">
                 About Our College
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -55,13 +57,14 @@ export default function About() {
             {/* Mission */}
             <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
               <div className="flex items-center gap-4 mb-6">
-                <Target className="text-primary" size={40} />
-                <h3 className="text-3xl font-bold text-primary">Our Mission</h3>
+                <Target className="text-[#4a7c59]" size={40} />
+                <h3 className="text-3xl font-bold text-[#4a7c59]">Our Mission</h3>
               </div>
               <div className="space-y-4 text-gray-700">
                 <div>
-                  <h4 className="font-bold text-lg mb-2">
-                    🎯 Inculcating Skills
+                  <h4 className="font-bold text-lg mb-2 flex items-center gap-2">
+                    <TrendingUp size={20} className="text-[#4a7c59]" />
+                    Inculcating Skills
                   </h4>
                   <p>
                     To inculcate managerial and entrepreneurial skills with a
@@ -69,8 +72,9 @@ export default function About() {
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg mb-2">
-                    📈 Professional Competence
+                  <h4 className="font-bold text-lg mb-2 flex items-center gap-2">
+                    <GraduationCap size={20} className="text-[#4a7c59]" />
+                    Professional Competence
                   </h4>
                   <p>
                     To motivate students to gain professional competence through
@@ -79,8 +83,9 @@ export default function About() {
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg mb-2">
-                    💎 Cultivating Values
+                  <h4 className="font-bold text-lg mb-2 flex items-center gap-2">
+                    <Heart size={20} className="text-[#4a7c59]" />
+                    Cultivating Values
                   </h4>
                   <p>
                     To cultivate personal integrity, ethical consciousness,
@@ -93,8 +98,8 @@ export default function About() {
             {/* Vision */}
             <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
               <div className="flex items-center gap-4 mb-6">
-                <Eye className="text-primary" size={40} />
-                <h3 className="text-3xl font-bold text-primary">Our Vision</h3>
+                <Eye className="text-[#4a7c59]" size={40} />
+                <h3 className="text-3xl font-bold text-[#4a7c59]">Our Vision</h3>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 In the era of competition, Dr. A.P.J. Abdul Kalam College of
@@ -102,21 +107,21 @@ export default function About() {
               </p>
               <div className="space-y-3 text-gray-700">
                 <div className="flex gap-3">
-                  <span className="text-primary font-bold text-xl">✓</span>
+                  <CheckCircle className="text-[#4a7c59]" size={20} />
                   <span>
                     Produce competent business professionals and entrepreneurs
                     with necessary managerial and research skills
                   </span>
                 </div>
                 <div className="flex gap-3">
-                  <span className="text-primary font-bold text-xl">✓</span>
+                  <CheckCircle className="text-[#4a7c59]" size={20} />
                   <span>
                     Become a centre of excellence for conveying quality
                     education
                   </span>
                 </div>
                 <div className="flex gap-3">
-                  <span className="text-primary font-bold text-xl">✓</span>
+                  <CheckCircle className="text-[#4a7c59]" size={20} />
                   <span>
                     Foster innovation, leadership, and professional advancement
                   </span>
@@ -135,10 +140,10 @@ export default function About() {
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* President's Desk */}
-            <div className="bg-blue-50 rounded-lg p-8 border-l-4 border-primary">
+            <div className="bg-[#eaf5ef] rounded-lg p-8 border-l-4 border-[#4a7c59]">
               <div className="flex items-center gap-4 mb-6">
-                <div className="text-5xl">👔</div>
-                <h3 className="text-2xl font-bold text-primary">
+                <User size={48} className="text-[#4a7c59]" />
+                <h3 className="text-2xl font-bold text-[#4a7c59]">
                   President's Message
                 </h3>
               </div>
@@ -156,10 +161,10 @@ export default function About() {
             </div>
 
             {/* Secretary's Desk */}
-            <div className="bg-green-50 rounded-lg p-8 border-l-4 border-secondary">
+            <div className="bg-[#eaf5ef] rounded-lg p-8 border-l-4 border-[#4a7c59]">
               <div className="flex items-center gap-4 mb-6">
-                <div className="text-5xl">📋</div>
-                <h3 className="text-2xl font-bold text-secondary">
+                <FileText size={48} className="text-[#4a7c59]" />
+                <h3 className="text-2xl font-bold text-[#4a7c59]">
                   Secretary's Message
                 </h3>
               </div>
@@ -187,25 +192,31 @@ export default function About() {
             Our Core Values
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="text-5xl mb-4">💡</div>
-              <h3 className="text-xl font-bold text-primary mb-3">Innovation</h3>
+            <div className="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+              <div className="flex justify-center mb-4">
+                <Lightbulb size={56} className="text-[#4a7c59]" />
+              </div>
+              <h3 className="text-xl font-bold text-[#4a7c59] mb-3">Innovation</h3>
               <p className="text-gray-700">
                 Encouraging creative thinking and innovative solutions to
                 business challenges
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="text-5xl mb-4">🤝</div>
-              <h3 className="text-xl font-bold text-primary mb-3">Integrity</h3>
+            <div className="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+              <div className="flex justify-center mb-4">
+                <Shield size={56} className="text-[#4a7c59]" />
+              </div>
+              <h3 className="text-xl font-bold text-[#4a7c59] mb-3">Integrity</h3>
               <p className="text-gray-700">
                 Maintaining highest standards of honesty and ethical conduct in
                 all dealings
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="text-5xl mb-4">🌍</div>
-              <h3 className="text-xl font-bold text-primary mb-3">Excellence</h3>
+            <div className="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+              <div className="flex justify-center mb-4">
+                <Trophy size={56} className="text-[#4a7c59]" />
+              </div>
+              <h3 className="text-xl font-bold text-[#4a7c59] mb-3">Excellence</h3>
               <p className="text-gray-700">
                 Pursuing excellence in academics, research, and professional
                 practice
@@ -224,11 +235,12 @@ export default function About() {
           <div className="space-y-6">
             <div className="flex gap-6">
               <div className="flex flex-col items-center">
-                <div className="w-4 h-4 bg-primary rounded-full"></div>
-                <div className="w-1 h-24 bg-primary"></div>
+                <div className="w-4 h-4 bg-[#4a7c59] rounded-full"></div>
+                <div className="w-1 h-24 bg-[#4a7c59]"></div>
               </div>
               <div className="pb-6">
-                <h3 className="text-xl font-bold text-primary mb-2">
+                <h3 className="text-xl font-bold text-[#4a7c59] mb-2 flex items-center gap-2">
+                  <Calendar size={18} />
                   Institution Established
                 </h3>
                 <p className="text-gray-700">
@@ -238,11 +250,12 @@ export default function About() {
             </div>
             <div className="flex gap-6">
               <div className="flex flex-col items-center">
-                <div className="w-4 h-4 bg-primary rounded-full"></div>
-                <div className="w-1 h-24 bg-primary"></div>
+                <div className="w-4 h-4 bg-[#4a7c59] rounded-full"></div>
+                <div className="w-1 h-24 bg-[#4a7c59]"></div>
               </div>
               <div className="pb-6">
-                <h3 className="text-xl font-bold text-primary mb-2">
+                <h3 className="text-xl font-bold text-[#4a7c59] mb-2 flex items-center gap-2">
+                  <Users size={18} />
                   First Batch Admission
                 </h3>
                 <p className="text-gray-700">
@@ -252,10 +265,11 @@ export default function About() {
             </div>
             <div className="flex gap-6">
               <div className="flex flex-col items-center">
-                <div className="w-4 h-4 bg-primary rounded-full"></div>
+                <div className="w-4 h-4 bg-[#4a7c59] rounded-full"></div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-primary mb-2">
+                <h3 className="text-xl font-bold text-[#4a7c59] mb-2 flex items-center gap-2">
+                  <Sparkles size={18} />
                   Growing Excellence
                 </h3>
                 <p className="text-gray-700">
@@ -268,16 +282,16 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary text-white py-16">
+      <section className="bg-[#4a7c59] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Join Our Community</h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-[#d4e8da] mb-8 max-w-2xl mx-auto">
             Be part of an institution committed to excellence and student
             success
           </p>
           <button
             onClick={() => alert("Application Form Opening Soon!")}
-            className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
+            className="bg-white text-[#4a7c59] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
           >
             Apply Now
           </button>

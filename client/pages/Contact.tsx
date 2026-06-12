@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Send, Building2, Calendar, FileText, HelpCircle, CheckCircle } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -83,10 +83,10 @@ export default function Contact() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-16 md:py-24">
+      <section className="bg-gradient-to-r from-[#4a7c59] to-[#3a6347] text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl text-blue-100">
+          <p className="text-xl text-[#d4e8da]">
             Get in touch with us for inquiries, admissions, and feedback
           </p>
         </div>
@@ -99,9 +99,9 @@ export default function Contact() {
             Get In Touch
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition">
-              <MapPin className="text-primary mx-auto mb-4" size={48} />
-              <h3 className="text-xl font-bold text-primary mb-3">Address</h3>
+            <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition border-t-4 border-[#4a7c59]">
+              <MapPin className="text-[#4a7c59] mx-auto mb-4" size={48} />
+              <h3 className="text-xl font-bold text-[#4a7c59] mb-3">Address</h3>
               <p className="text-gray-700 leading-relaxed">
                 Tumsar – Hasara, Tah. Tumsar
                 <br />
@@ -110,22 +110,22 @@ export default function Contact() {
                 Pin Code: 441912
               </p>
             </div>
-            <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition">
-              <Mail className="text-primary mx-auto mb-4" size={48} />
-              <h3 className="text-xl font-bold text-primary mb-3">Email</h3>
+            <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition border-t-4 border-[#4a7c59]">
+              <Mail className="text-[#4a7c59] mx-auto mb-4" size={48} />
+              <h3 className="text-xl font-bold text-[#4a7c59] mb-3">Email</h3>
               <a
                 href="mailto:dapjkalamcollege@gmail.com"
-                className="text-gray-700 hover:text-primary transition break-all"
+                className="text-gray-700 hover:text-[#4a7c59] transition break-all"
               >
                 dapjkalamcollege@gmail.com
               </a>
             </div>
-            <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition">
-              <Phone className="text-primary mx-auto mb-4" size={48} />
-              <h3 className="text-xl font-bold text-primary mb-3">Phone</h3>
+            <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition border-t-4 border-[#4a7c59]">
+              <Phone className="text-[#4a7c59] mx-auto mb-4" size={48} />
+              <h3 className="text-xl font-bold text-[#4a7c59] mb-3">Phone</h3>
               <a
                 href="tel:+917387780562"
-                className="text-gray-700 hover:text-primary transition"
+                className="text-gray-700 hover:text-[#4a7c59] transition"
               >
                 +91 7387780562
               </a>
@@ -157,7 +157,7 @@ export default function Contact() {
                     className={`w-full px-4 py-3 rounded-lg border-2 transition focus:outline-none ${
                       errors.name
                         ? "border-red-500 focus:border-red-500"
-                        : "border-gray-300 focus:border-primary"
+                        : "border-gray-300 focus:border-[#4a7c59]"
                     }`}
                   />
                   {errors.name && (
@@ -178,7 +178,7 @@ export default function Contact() {
                     className={`w-full px-4 py-3 rounded-lg border-2 transition focus:outline-none ${
                       errors.email
                         ? "border-red-500 focus:border-red-500"
-                        : "border-gray-300 focus:border-primary"
+                        : "border-gray-300 focus:border-[#4a7c59]"
                     }`}
                   />
                   {errors.email && (
@@ -199,7 +199,7 @@ export default function Contact() {
                     className={`w-full px-4 py-3 rounded-lg border-2 transition focus:outline-none ${
                       errors.subject
                         ? "border-red-500 focus:border-red-500"
-                        : "border-gray-300 focus:border-primary"
+                        : "border-gray-300 focus:border-[#4a7c59]"
                     }`}
                   />
                   {errors.subject && (
@@ -222,7 +222,7 @@ export default function Contact() {
                     className={`w-full px-4 py-3 rounded-lg border-2 transition focus:outline-none resize-none ${
                       errors.message
                         ? "border-red-500 focus:border-red-500"
-                        : "border-gray-300 focus:border-primary"
+                        : "border-gray-300 focus:border-[#4a7c59]"
                     }`}
                   />
                   {errors.message && (
@@ -234,16 +234,17 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition inline-flex items-center justify-center gap-2"
+                  className="w-full bg-[#4a7c59] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#3a6347] transition inline-flex items-center justify-center gap-2"
                 >
                   <Send size={20} />
                   Send Message
                 </button>
 
                 {submitted && (
-                  <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                  <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded flex items-center gap-2">
+                    <CheckCircle size={20} className="text-green-500" />
                     <p className="text-green-700 font-semibold">
-                      ✓ Message sent successfully! We'll get back to you soon.
+                      Message sent successfully! We'll get back to you soon.
                     </p>
                   </div>
                 )}
@@ -252,13 +253,14 @@ export default function Contact() {
 
             {/* Side Info */}
             <div className="space-y-8">
-              <div className="bg-blue-50 rounded-lg p-8 border-l-4 border-primary">
-                <h3 className="text-2xl font-bold text-primary mb-4">
-                  Office Hours
-                </h3>
+              <div className="bg-[#eaf5ef] rounded-lg p-8 border-l-4 border-[#4a7c59]">
+                <div className="flex items-center gap-3 mb-4">
+                  <Clock size={28} className="text-[#4a7c59]" />
+                  <h3 className="text-2xl font-bold text-[#4a7c59]">Office Hours</h3>
+                </div>
                 <div className="space-y-3">
                   <div className="flex gap-4">
-                    <Clock className="text-primary flex-shrink-0" size={24} />
+                    <Calendar size={20} className="text-[#4a7c59] flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-gray-900">
                         Monday - Friday
@@ -267,14 +269,14 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <Clock className="text-primary flex-shrink-0" size={24} />
+                    <Calendar size={20} className="text-[#4a7c59] flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-gray-900">Saturday</p>
                       <p className="text-gray-700">9:00 AM - 2:00 PM</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <Clock className="text-primary flex-shrink-0" size={24} />
+                    <Calendar size={20} className="text-[#4a7c59] flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-gray-900">Sunday</p>
                       <p className="text-gray-700">Closed</p>
@@ -283,57 +285,63 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-lg shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-primary mb-6">
-                  Quick Links
-                </h3>
+              <div className="bg-white rounded-lg shadow-lg p-8 border-t-4 border-[#4a7c59]">
+                <div className="flex items-center gap-3 mb-6">
+                  <FileText size={28} className="text-[#4a7c59]" />
+                  <h3 className="text-2xl font-bold text-[#4a7c59]">Quick Links</h3>
+                </div>
                 <ul className="space-y-3">
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 hover:text-primary transition font-semibold"
+                      className="text-gray-700 hover:text-[#4a7c59] transition font-semibold flex items-center gap-2"
                     >
-                      📚 Academics
+                      <Building2 size={18} />
+                      Academics
                     </a>
                   </li>
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 hover:text-primary transition font-semibold"
+                      className="text-gray-700 hover:text-[#4a7c59] transition font-semibold flex items-center gap-2"
                     >
-                      🎓 Admissions
+                      <GraduationCap size={18} />
+                      Admissions
                     </a>
                   </li>
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 hover:text-primary transition font-semibold"
+                      className="text-gray-700 hover:text-[#4a7c59] transition font-semibold flex items-center gap-2"
                     >
-                      💼 Career Opportunities
+                      <Briefcase size={18} />
+                      Career Opportunities
                     </a>
                   </li>
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 hover:text-primary transition font-semibold"
+                      className="text-gray-700 hover:text-[#4a7c59] transition font-semibold flex items-center gap-2"
                     >
-                      📋 Feedback
+                      <HelpCircle size={18} />
+                      Feedback
                     </a>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-green-50 rounded-lg p-8 border-l-4 border-secondary">
-                <h3 className="text-2xl font-bold text-secondary mb-4">
-                  Admission Inquiries
-                </h3>
+              <div className="bg-[#eaf5ef] rounded-lg p-8 border-l-4 border-[#4a7c59]">
+                <div className="flex items-center gap-3 mb-4">
+                  <GraduationCap size={28} className="text-[#4a7c59]" />
+                  <h3 className="text-2xl font-bold text-[#4a7c59]">Admission Inquiries</h3>
+                </div>
                 <p className="text-gray-700 mb-4">
                   For admission-related queries, please fill the form and our
                   admissions team will contact you within 24 hours.
                 </p>
                 <button
                   onClick={() => alert("Admission form opening soon!")}
-                  className="w-full bg-secondary text-white px-6 py-2 rounded-lg font-semibold hover:bg-secondary/90 transition"
+                  className="w-full bg-[#4a7c59] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#3a6347] transition"
                 >
                   Admission Form
                 </button>
@@ -346,7 +354,8 @@ export default function Contact() {
       {/* Map Section */}
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">
+          <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 flex items-center justify-center gap-2">
+            <MapPin size={28} className="text-[#4a7c59]" />
             Location
           </h2>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden h-96">
@@ -367,3 +376,6 @@ export default function Contact() {
     </div>
   );
 }
+
+// Import missing icons
+import { GraduationCap, Briefcase } from "lucide-react";

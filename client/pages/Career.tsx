@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { MapPin, Briefcase, Calendar, Users, Download } from "lucide-react";
+import { MapPin, Briefcase, Calendar, Users, Download, Mail, FileText, Building2, UserPlus, Send, Clock, Phone, Award, GraduationCap, BookOpen, FlaskConical, Calculator, Microscope, ScrollText, Languages, TrendingUp, PieChart, AlertCircle } from "lucide-react";
 
 export default function Career() {
   const [activeFilter, setActiveFilter] = useState<"all" | "mba" | "arts">(
@@ -34,6 +34,7 @@ export default function Career() {
       vacancy: 1,
       department: "Arts/Science",
       lastDate: undefined,
+      icon: FlaskConical,
     },
     {
       id: 3,
@@ -44,6 +45,7 @@ export default function Career() {
       vacancy: 1,
       department: "Arts/Science",
       lastDate: undefined,
+      icon: Leaf,
     },
     {
       id: 4,
@@ -54,6 +56,7 @@ export default function Career() {
       vacancy: 1,
       department: "Arts/Science",
       lastDate: undefined,
+      icon: FlaskConical,
     },
     {
       id: 5,
@@ -64,6 +67,7 @@ export default function Career() {
       vacancy: 1,
       department: "Arts/Science",
       lastDate: undefined,
+      icon: Calculator,
     },
     {
       id: 6,
@@ -74,6 +78,7 @@ export default function Career() {
       vacancy: 1,
       department: "Arts/Science",
       lastDate: undefined,
+      icon: Microscope,
     },
     {
       id: 7,
@@ -84,6 +89,7 @@ export default function Career() {
       vacancy: 1,
       department: "Arts/Science",
       lastDate: undefined,
+      icon: ScrollText,
     },
     {
       id: 8,
@@ -94,6 +100,7 @@ export default function Career() {
       vacancy: 1,
       department: "Arts/Science",
       lastDate: undefined,
+      icon: Users,
     },
     {
       id: 9,
@@ -104,6 +111,7 @@ export default function Career() {
       vacancy: 1,
       department: "Arts/Science",
       lastDate: undefined,
+      icon: Languages,
     },
     {
       id: 10,
@@ -114,6 +122,7 @@ export default function Career() {
       vacancy: 1,
       department: "Arts/Science",
       lastDate: undefined,
+      icon: BookOpen,
     },
     {
       id: 11,
@@ -124,6 +133,7 @@ export default function Career() {
       vacancy: 1,
       department: "Arts/Science",
       lastDate: undefined,
+      icon: TrendingUp,
     },
     {
       id: 12,
@@ -134,6 +144,7 @@ export default function Career() {
       vacancy: 1,
       department: "Arts/Science",
       lastDate: undefined,
+      icon: PieChart,
     },
   ];
 
@@ -149,10 +160,10 @@ export default function Career() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-16 md:py-24">
+      <section className="bg-gradient-to-r from-[#4a7c59] to-[#3a6347] text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Career Page</h1>
-          <p className="text-xl text-blue-100">
+          <p className="text-xl text-[#d4e8da]">
             Join Our Team: Current Opportunities at Dr. A.P.J. Abdul Kalam
             College
           </p>
@@ -160,9 +171,12 @@ export default function Career() {
       </section>
 
       {/* Team Banner */}
-      <section className="bg-blue-50 py-12">
+      <section className="bg-[#eaf5ef] py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-primary mb-4">
+          <div className="flex justify-center mb-4">
+            <UserPlus size={48} className="text-[#4a7c59]" />
+          </div>
+          <h2 className="text-3xl font-bold text-[#4a7c59] mb-4">
             Join Our Growing Team
           </h2>
           <p className="text-lg text-gray-700">
@@ -179,9 +193,9 @@ export default function Career() {
             Download Recruitment Documents
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition">
-              <Download className="text-primary mx-auto mb-4" size={48} />
-              <h3 className="text-xl font-bold text-primary mb-4">
+            <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition border-t-4 border-[#4a7c59]">
+              <FileText className="text-[#4a7c59] mx-auto mb-4" size={48} />
+              <h3 className="text-xl font-bold text-[#4a7c59] mb-4">
                 MBA Recruitment PDF
               </h3>
               <p className="text-gray-700 mb-6">
@@ -193,14 +207,14 @@ export default function Career() {
                     "Downloading MBA Recruitment PDF...\n\nFile: MBA_Recruitment_Details.pdf"
                   )
                 }
-                className="bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary/90 transition"
+                className="bg-[#4a7c59] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#3a6347] transition"
               >
                 Download PDF
               </button>
             </div>
-            <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition">
-              <Download className="text-primary mx-auto mb-4" size={48} />
-              <h3 className="text-xl font-bold text-primary mb-4">
+            <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition border-t-4 border-[#4a7c59]">
+              <FileText className="text-[#4a7c59] mx-auto mb-4" size={48} />
+              <h3 className="text-xl font-bold text-[#4a7c59] mb-4">
                 Arts, Commerce & Science Recruitment PDF
               </h3>
               <p className="text-gray-700 mb-6">
@@ -212,7 +226,7 @@ export default function Career() {
                     "Downloading Arts/Commerce/Science Recruitment PDF...\n\nFile: Arts_Commerce_Science_Recruitment.pdf"
                   )
                 }
-                className="bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary/90 transition"
+                className="bg-[#4a7c59] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#3a6347] transition"
               >
                 Download PDF
               </button>
@@ -228,16 +242,17 @@ export default function Career() {
             Share Your Resume
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-blue-50 rounded-lg p-8 border-l-4 border-primary">
-              <h3 className="text-xl font-bold text-primary mb-4">
-                📧 MBA Recruitment
-              </h3>
+            <div className="bg-[#eaf5ef] rounded-lg p-8 border-l-4 border-[#4a7c59]">
+              <div className="flex items-center gap-3 mb-4">
+                <Mail size={28} className="text-[#4a7c59]" />
+                <h3 className="text-xl font-bold text-[#4a7c59]">MBA Recruitment</h3>
+              </div>
               <p className="text-gray-700 mb-4">
                 For MBA Assistant Professor positions, please send your resume
                 to:
               </p>
               <div className="bg-white rounded-lg p-4 mb-4">
-                <p className="font-mono text-primary font-semibold">
+                <p className="font-mono text-[#4a7c59] font-semibold">
                   dapjkalamcollege@gmail.com
                 </p>
               </div>
@@ -246,16 +261,17 @@ export default function Career() {
                 Management, Tumsar, Dist- Bhandara, Pin Code: 441912
               </p>
             </div>
-            <div className="bg-green-50 rounded-lg p-8 border-l-4 border-secondary">
-              <h3 className="text-xl font-bold text-secondary mb-4">
-                📧 Arts, Commerce & Science Recruitment
-              </h3>
+            <div className="bg-[#eaf5ef] rounded-lg p-8 border-l-4 border-[#4a7c59]">
+              <div className="flex items-center gap-3 mb-4">
+                <Mail size={28} className="text-[#4a7c59]" />
+                <h3 className="text-xl font-bold text-[#4a7c59]">Arts, Commerce & Science Recruitment</h3>
+              </div>
               <p className="text-gray-700 mb-4">
                 For Arts/Commerce/Science positions, please send your resume
                 to:
               </p>
               <div className="bg-white rounded-lg p-4 mb-4">
-                <p className="font-mono text-primary font-semibold">
+                <p className="font-mono text-[#4a7c59] font-semibold">
                   dapjkalamcollege@gmail.com
                 </p>
               </div>
@@ -280,8 +296,8 @@ export default function Career() {
               onClick={() => setActiveFilter("all")}
               className={`px-6 py-2 rounded-lg font-semibold transition ${
                 activeFilter === "all"
-                  ? "bg-primary text-white"
-                  : "bg-white text-primary border-2 border-primary hover:bg-blue-50"
+                  ? "bg-[#4a7c59] text-white"
+                  : "bg-white text-[#4a7c59] border-2 border-[#4a7c59] hover:bg-[#eaf5ef]"
               }`}
             >
               All Positions
@@ -290,8 +306,8 @@ export default function Career() {
               onClick={() => setActiveFilter("mba")}
               className={`px-6 py-2 rounded-lg font-semibold transition ${
                 activeFilter === "mba"
-                  ? "bg-primary text-white"
-                  : "bg-white text-primary border-2 border-primary hover:bg-blue-50"
+                  ? "bg-[#4a7c59] text-white"
+                  : "bg-white text-[#4a7c59] border-2 border-[#4a7c59] hover:bg-[#eaf5ef]"
               }`}
             >
               MBA Recruitment
@@ -300,8 +316,8 @@ export default function Career() {
               onClick={() => setActiveFilter("arts")}
               className={`px-6 py-2 rounded-lg font-semibold transition ${
                 activeFilter === "arts"
-                  ? "bg-primary text-white"
-                  : "bg-white text-primary border-2 border-primary hover:bg-blue-50"
+                  ? "bg-[#4a7c59] text-white"
+                  : "bg-white text-[#4a7c59] border-2 border-[#4a7c59] hover:bg-[#eaf5ef]"
               }`}
             >
               Arts, Commerce & Science
@@ -325,109 +341,114 @@ export default function Career() {
             </div>
           ) : (
             <div className="space-y-6">
-              {filteredPositions.map((position) => (
-                <div
-                  key={position.id}
-                  className="bg-white rounded-lg shadow-md hover:shadow-lg transition p-8 border-l-4 border-primary"
-                >
-                  <div className="grid md:grid-cols-3 gap-6 mb-6">
-                    <div>
-                      <h3 className="text-2xl font-bold text-primary mb-2">
-                        {position.title}
-                      </h3>
-                      <div className="flex items-center gap-2 text-gray-600">
-                        <Briefcase size={18} />
-                        <span>{position.department}</span>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-2 text-gray-700">
-                      <MapPin className="flex-shrink-0 mt-1" size={20} />
+              {filteredPositions.map((position) => {
+                const SubjectIcon = (position as any).icon || GraduationCap;
+                return (
+                  <div
+                    key={position.id}
+                    className="bg-white rounded-lg shadow-md hover:shadow-lg transition p-8 border-l-4 border-[#4a7c59]"
+                  >
+                    <div className="grid md:grid-cols-3 gap-6 mb-6">
                       <div>
-                        <p className="font-semibold">{position.location}</p>
-                        <p className="text-sm text-gray-600">Location</p>
+                        <div className="flex items-center gap-2 mb-2">
+                          <SubjectIcon size={24} className="text-[#4a7c59]" />
+                          <h3 className="text-2xl font-bold text-[#4a7c59]">
+                            {position.title}
+                          </h3>
+                        </div>
+                        <div className="flex items-center gap-2 text-gray-600">
+                          <Briefcase size={18} />
+                          <span>{position.department}</span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-start gap-2 text-gray-700">
-                      <Users className="flex-shrink-0 mt-1" size={20} />
-                      <div>
-                        <p className="font-semibold">{position.vacancy}</p>
-                        <p className="text-sm text-gray-600">
-                          Vacancies
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="mb-6 p-6 bg-blue-50 rounded-lg">
-                    <h4 className="font-bold text-gray-900 mb-2">
-                      Qualifications:
-                    </h4>
-                    <p className="text-gray-700 leading-relaxed">
-                      {position.qualification}
-                    </p>
-                  </div>
-
-                  <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
-                    <div className="flex gap-6">
-                      <div>
-                        <p className="text-sm text-gray-600">Employment Type</p>
-                        <p className="font-semibold text-gray-900">Full-time</p>
-                      </div>
-                      <div>
-                        <p className="text-sm text-gray-600">Pay Scale</p>
-                        <p className="font-semibold text-gray-900">
-                          As per AICTE & Govt. rules
-                        </p>
-                      </div>
-                      {position.lastDate && (
+                      <div className="flex items-start gap-2 text-gray-700">
+                        <MapPin className="flex-shrink-0 mt-1" size={20} />
                         <div>
-                          <p className="text-sm text-gray-600">Last Date</p>
+                          <p className="font-semibold">{position.location}</p>
+                          <p className="text-sm text-gray-600">Location</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2 text-gray-700">
+                        <Users className="flex-shrink-0 mt-1" size={20} />
+                        <div>
+                          <p className="font-semibold">{position.vacancy}</p>
+                          <p className="text-sm text-gray-600">Vacancies</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="mb-6 p-6 bg-[#eaf5ef] rounded-lg">
+                      <h4 className="font-bold text-gray-900 mb-2 flex items-center gap-2">
+                        <Award size={18} className="text-[#4a7c59]" />
+                        Qualifications:
+                      </h4>
+                      <p className="text-gray-700 leading-relaxed">
+                        {position.qualification}
+                      </p>
+                    </div>
+
+                    <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
+                      <div className="flex gap-6 flex-wrap">
+                        <div>
+                          <p className="text-sm text-gray-600">Employment Type</p>
+                          <p className="font-semibold text-gray-900">Full-time</p>
+                        </div>
+                        <div>
+                          <p className="text-sm text-gray-600">Pay Scale</p>
                           <p className="font-semibold text-gray-900">
-                            {position.lastDate}
+                            As per AICTE & Govt. rules
                           </p>
                         </div>
-                      )}
+                        {position.lastDate && (
+                          <div>
+                            <p className="text-sm text-gray-600">Last Date</p>
+                            <p className="font-semibold text-gray-900">
+                              {position.lastDate}
+                            </p>
+                          </div>
+                        )}
+                      </div>
+                      <button
+                        onClick={() =>
+                          alert(
+                            `Application for ${position.title}\n\nPlease send your CV and documents to: dapjkalamcollege@gmail.com`
+                          )
+                        }
+                        className="bg-[#4a7c59] text-white px-8 py-2 rounded-lg font-semibold hover:bg-[#3a6347] transition whitespace-nowrap"
+                      >
+                        Apply Now
+                      </button>
                     </div>
-                    <button
-                      onClick={() =>
-                        alert(
-                          `Application for ${position.title}\n\nPlease send your CV and documents to: dapjkalamcollege@gmail.com`
-                        )
-                      }
-                      className="bg-primary text-white px-8 py-2 rounded-lg font-semibold hover:bg-primary/90 transition whitespace-nowrap"
-                    >
-                      Apply Now
-                    </button>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>
       </section>
 
       {/* Contact for Inquiries */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-16">
+      <section className="bg-[#4a7c59] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Questions About Careers?</h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-[#d4e8da] mb-8">
             Contact our HR department for more information
           </p>
           <div className="space-y-4 mb-8">
-            <p className="text-lg">
-              📧{" "}
+            <p className="text-lg flex items-center justify-center gap-2">
+              <Mail size={20} />
               <a
                 href="mailto:dapjkalamcollege@gmail.com"
-                className="hover:text-blue-200 transition"
+                className="hover:text-[#d4e8da] transition"
               >
                 dapjkalamcollege@gmail.com
               </a>
             </p>
-            <p className="text-lg">
-              📞{" "}
+            <p className="text-lg flex items-center justify-center gap-2">
+              <Phone size={20} />
               <a
                 href="tel:+917387780562"
-                className="hover:text-blue-200 transition"
+                className="hover:text-[#d4e8da] transition"
               >
                 +91 7387780562
               </a>
@@ -435,7 +456,7 @@ export default function Career() {
           </div>
           <button
             onClick={() => alert("Career inquiry form coming soon!")}
-            className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
+            className="bg-white text-[#4a7c59] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
           >
             Send Inquiry
           </button>
@@ -446,3 +467,6 @@ export default function Career() {
     </div>
   );
 }
+
+// Leaf icon is needed for Botany
+import { Leaf } from "lucide-react";
