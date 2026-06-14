@@ -17,6 +17,9 @@ import axis from "@/pages/Axis.png";
 import hdfc from "@/pages/hdfc.png";
 import esaf from "@/pages/esaf.png";
 import sbi from "@/pages/sbi.png";
+import manappuram from "@/pages/manapp.png";  
+import sis from "@/pages/sis.png";
+import moil from "@/pages/moil.png"
 
 // ✅ VERIFIED WORKING LOGO URLs — All tested and reliable
 const placementPartners = [
@@ -52,7 +55,7 @@ const placementPartners = [
   },
   { 
     name: "MANAPPURAM FINANCE", 
-    logo: "https://kimi-web-img.moonshot.cn/img/content3.jdmagicbox.com/d0366d5957529476aace3a0ca25c0009cb38c841.jpg", 
+    logo: manappuram, 
     color: "#FF8C00",
     website: "https://www.manappuram.com"
   },
@@ -70,13 +73,13 @@ const placementPartners = [
   },
   { 
     name: "SISCO SECURITY", 
-    logo: "https://kimi-web-img.moonshot.cn/img/siscosecurity.com/ecac052c0905e8c2d4fdaaffc7c1454894a759f6.png", 
+    logo: sis, 
     color: "#2C3E50",
     website: "https://www.siscosecurity.com"
   },
   { 
     name: "MOIL LIMITED", 
-    logo: "https://kimi-web-img.moonshot.cn/img/moilwebbackend.allindianitservices.com/3fde9d5d4f895f83de2d8fca0d401537f7ffe313.png", 
+    logo: moil, 
     color: "#1E3A8A",
     website: "https://www.moil.nic.in"
   },
@@ -212,12 +215,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-8 animate-fade-in-up">
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2">
-                <Sparkles className="w-4 h-4 text-yellow-300" />
-                <span className="text-sm font-medium">NAAC Accredited Institution</span>
-              </div>
-
+            
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   Dr. A.P.J. Abdul Kalam
@@ -269,20 +267,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right — Quick Info Cards */}
-            <div className="hidden lg:grid grid-cols-2 gap-4 animate-fade-in-up animation-delay-300">
-              {highlights.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 group cursor-pointer"
-                  style={{ animationDelay: `${idx * 100}ms` }}
-                >
-                  <item.icon className="w-10 h-10 text-blue-300 mb-3 group-hover:scale-110 transition-transform" />
-                  <h3 className="font-bold text-lg">{item.title}</h3>
-                  <p className="text-sm text-gray-300">{item.desc}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
