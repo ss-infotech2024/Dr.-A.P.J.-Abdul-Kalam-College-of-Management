@@ -144,7 +144,7 @@ export default function Footer() {
               <p>All Right Reserved.</p>
             </div>
             <div className="text-center md:text-right">
-              <p>Designed & Developed By : <span className="font-semibold underline">Viraj Patle</span></p>
+              <p>Designed & Developed By : <span className="font-semibold underline">SS Infotech</span></p>
             </div>
           </div>
         </div>

@@ -10,7 +10,8 @@ export default function AboutPage() {
             PAGE TITLE
         ═══════════════════════════════════════════════════════════════ */}
         <h1 className="text-2xl sm:text-3xl font-bold text-[#4a7c59] text-center mb-8">
-          Welcome To Dr. S.C. Gulhane Prema College of Management And Technology
+          Welcome To Dr. A.P.J. Abdul Kalam
+College of Management, Tumsar
         </h1>
 
         <div className="grid lg:grid-cols-3 gap-8">
