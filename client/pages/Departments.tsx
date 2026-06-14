@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Award, Users, Globe, Briefcase, TrendingUp, Network, BookOpen, BarChart3, Target, Rocket, Shield, CheckCircle, ArrowRight, GraduationCap, Lightbulb, Handshake, LineChart, Star, Zap } from "lucide-react";
+import MBASyllabus from "@/components/MBASyllabus";
 
 export default function Departments() {
   const features = [
@@ -264,7 +265,7 @@ export default function Departments() {
           </div>
         </div>
       </section>
-
+<MBASyllabus/>
       {/* Faculty Message */}
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

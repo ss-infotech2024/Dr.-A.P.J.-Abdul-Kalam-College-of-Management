@@ -330,22 +330,7 @@ export default function Contact() {
                 </ul>
               </div>
 
-              <div className="bg-[#eaf5ef] rounded-lg p-8 border-l-4 border-[#4a7c59]">
-                <div className="flex items-center gap-3 mb-4">
-                  <GraduationCap size={28} className="text-[#4a7c59]" />
-                  <h3 className="text-2xl font-bold text-[#4a7c59]">Admission Inquiries</h3>
-                </div>
-                <p className="text-gray-700 mb-4">
-                  For admission-related queries, please fill the form and our
-                  admissions team will contact you within 24 hours.
-                </p>
-                <button
-                  onClick={() => alert("Admission form opening soon!")}
-                  className="w-full bg-[#4a7c59] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#3a6347] transition"
-                >
-                  Admission Form
-                </button>
-              </div>
+              <AdmissionEnquiry/>
             </div>
           </div>
         </div>
@@ -379,3 +364,4 @@ export default function Contact() {
 
 // Import missing icons
 import { GraduationCap, Briefcase } from "lucide-react";
+import AdmissionEnquiry from "@/components/AdmissionEnquiry";

@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { CheckCircle, Users, Briefcase, Trophy, Mic, FileText, Users2, Code, Handshake, TrendingUp, Building2, Calendar, Target, Rocket, Brain, Award, LucideIcon } from "lucide-react";
+import PlacementPartners from "@/components/PlacementPartners";
 
 interface Step {
   number: number;
@@ -336,7 +337,7 @@ export default function Placement() {
           </div>
         </div>
       </section>
-
+<PlacementPartners/>
       {/* CTA Section */}
       <section className="bg-[#4a7c59] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
